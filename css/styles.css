@@ -10,7 +10,7 @@ body {
 
 a {
     text-decoration: none;
-}
+} 
 
 img {
     display: block;
@@ -60,7 +60,7 @@ img{
     height: auto;
 }
 
-/*general*/
+/*-----GENERAL------*/
 
 .container {
     max-width: 320px;
@@ -79,7 +79,8 @@ img{
         padding: 0 15px;}}
 
 
-        /*header*/
+
+        /*-----HEADER-----*/
 .header-section {
  border-bottom: 1px solid #e7e9fc;
 box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
@@ -126,10 +127,115 @@ color: #2e2f42;
 }
 
 @media screen and (min-width:768px) {
-        .burger-button{display: none;}
+.burger-button{display: none;}
     
-        .nav-list {
-            display: flex;
-            align-items: center;
-            gap: 40px;}}
+.nav-structure {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+
+.nav-list {
+display: flex;
+align-items: center;
+gap: 40px;}
+
+
+.logo-first {
+padding: 24px 0;
+margin-right: 120px;;}
         
+
+.header-links {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    padding: 0 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}
+
+
+
+.header-links .current {
+    position: relative;
+    padding: 24px 0;
+    transition-duration: 250ms;
+    color: #404bbf
+}
+
+
+.header-links .current::after {
+    content: "";
+    position: absolute;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    background-color: #404bbf;
+    left: 0px;
+    bottom: -1px;
+}
+
+.adress {
+
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+
+.contacts {
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-links:hover,
+.header-links:focus {
+    color: #404bbf;
+}
+.contacts:hover,
+.contacts:focus {
+    color: #404bbf;
+}
+}
+
+
+@media screen and (min-width:1158px){
+.logo-first {
+padding: 24px 0;
+margin-right: 76px;
+}
+
+.address-list {
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+
+}
+.contacts {
+    padding: 24px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+   
+}
+
+}
