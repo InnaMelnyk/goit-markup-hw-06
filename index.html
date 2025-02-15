@@ -62,7 +62,7 @@
       </div>
     </header>
 
-    <main class="hidden">
+    <main>
       <!--Short description who we are-->
       <section class="main-section">
         <div class="container">
@@ -74,7 +74,7 @@
       <!--SECTION 2-->
 
       <section class="adventeges">
-        <div class="container">
+        <div class="container features-container">
           <h2 class="visually-hidden">Adventeges</h2>
           <ul class="adventeges-list">
             <li class="list-info">
@@ -135,7 +135,12 @@
           <h2 class="team-header">Our Team</h2>
           <ul class="team-list">
             <li class="position-link">
-              <img src="./images/Mark.jpg" alt="Mark Guerrero" width="264" />
+              <img
+                srcset="./images/Mark.jpg 1x, ./images/mark-2x.jpg 2x"
+                src="./images/Mark.jpg"
+                alt="Mark Guerrero"
+                width="264"
+              />
               <div class="name-position">
                 <h3 class="staff-name">Mark Guerrero</h3>
                 <p class="staff-position">Product Designer</p>
@@ -174,7 +179,12 @@
             </li>
 
             <li class="position-link">
-              <img src="./images/Tom.jpg" alt="Tom Ford" width="264" />
+              <img
+                srcset="./images/Tom.jpg 1x, ./images/tom-2x.jpg 2x"
+                src="./images/Tom.jpg"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="name-position">
                 <h3 class="staff-name">Tom Ford</h3>
                 <p class="staff-position">Frontend Developer</p>
@@ -212,7 +222,12 @@
             </li>
 
             <li class="position-link">
-              <img src="./images/Camila.jpg" alt="Camila Garcia" width="264" />
+              <img
+                srcset="./images/Camila.jpg 1x, ./images/camila-2x.jpg 2x"
+                src="./images/Camila.jpg"
+                alt="Camila Garcia"
+                width="264"
+              />
               <div class="name-position">
                 <h3 class="staff-name">Camila Garcia</h3>
                 <p class="staff-position">Marketing</p>
@@ -250,7 +265,12 @@
             </li>
 
             <li class="position-link">
-              <img src="./images/Daniel.jpg" alt="Daniel Wilson" width="264" />
+              <img
+                srcset="./images/Daniel.jpg 1x, images/daniel-2x.jpg 2x"
+                src="./images/Daniel.jpg"
+                alt="Daniel Wilson"
+                width="264"
+              />
               <div class="name-position">
                 <h3 class="staff-name">Daniel Wilson</h3>
                 <p class="staff-position">UI Designer</p>
@@ -298,6 +318,29 @@
           <ul class="portfolio-list">
             <li class="link-portfolio">
               <div class="img-cover-text">
+                <picture>
+                  <source
+                    media="(min-width:1156px)"
+                    srcset="
+                      ./images/banking-desk-1x.jpg 1x,
+                      ./images/banking-desk-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/banking-lap-1x.jpg 1x,
+                      ./images/banking-lap-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width:320px )"
+                    srcset="
+                      ./images/banking-1x.jpg 1x,
+                      images/banking-2x.jpg   2x
+                    "
+                  />
+                </picture>
                 <img src="./images/banking.jpg" alt="Banking App" width="360" />
                 <p class="cover-card-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
