@@ -254,6 +254,12 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     background-position: center;
 }
 
+@media screen and (min-resolution:2x) {
+.main-section {background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/backgr-mob-2x.jpg);
+}}
+
 .main-title {
     display: block;
 
@@ -306,6 +312,13 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/backgr-lap-1x.jpg);
        }
 
+@media screen and (min-resolution:2x) {
+    .main-section{ background-color: rgba(46, 47, 66, 0.7);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/backgr-lap-2x.jpg);
+ }
+}
+
 
     .main-title {
     margin-bottom: 36px;
@@ -322,6 +335,16 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/backgr-desktop-1x.jpg);
     }
+
+
+@media screen and (min-resolution:2x) {
+    .main-section {
+        background-color: rgba(46, 47, 66, 0.7);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/backgr-desktop-2x.jpg);
+    }
+}
+
 
 .main-title {
     margin-bottom: 48px;
