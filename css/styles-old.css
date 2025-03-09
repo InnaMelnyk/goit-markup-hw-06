@@ -547,7 +547,7 @@ display: flex;
    background-color:#31D0AA;
 }
 
-.foot-form-wrap{
+.form{
    margin-left: 80px;
    width: 453px;
    height: 80px;
@@ -565,7 +565,7 @@ display: flex;
 }  
 
 
-.foot-right-title{
+.form-title{
    font-weight: 500;
       font-size: 16px;
       line-height: 1.5;
